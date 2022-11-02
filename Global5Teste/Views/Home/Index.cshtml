@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="home">
+    <div class="title">
+        <div class="mid"></div>
+        <div class="welcome">
+            <h1 class="title-welcome">
+                WELCOME TO GLOBAL5
+            </h1>
+            <div>
+                <P class="content">Manage your servers with Global5!</P>
+                <button class="get-started">
+                    @Html.ActionLink("GET STARTED", "Contact", "Home")
+                </button>
+            </div>
+        </div>
+        <div class="mid">
+
+        </div>
+    </div>
+    <div class="vector">
+
+    </div>
+</div>
+
+<style>
+    a {
+        color: white;
+    }
+
+        a:hover {
+            color: white;
+        }
+
+    .home {
+        display: flex;
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+        background: #f3f3f38c;
+    }
+
+    .title {
+        width: 40%;
+        height: 100%;
+    }
+
+    .welcome {
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .content {
+        width: 100%;
+        font-size: 2rem;
+        float: left;
+        margin-left: 12rem;
+        margin-top: 4rem;
+        color: gray;
+    }
+
+    .get-started {
+        box-shadow: 0px -2px 7px 1px #423d3d;
+        background: #0d4369;
+        padding: 2rem 4rem;
+        color: white;
+        border: 0;
+        text-align: center;
+        margin-left: 14rem;
+        width: 60%;
+        font-weight: bold;
+        border-radius: 89px;
+        margin-top: 4rem;
+    }
+
+        .get-started:hover {
+            background: #9f7f02;
+            border: 1px solid #8e8e07;
+            border: 1px solid yellow;
+        }
+
+    .title-welcome {
+        margin: 0 10rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 63px;
+        font-weight: bolder;
+    }
+
+    .mid {
+        width: 100%;
+        height: 20%;
+    }
+
+    .vector {
+        background-image: url('https://www.kindpng.com/picc/m/715-7150690_web-hosting-illustration-hd-png-download.png');
+        width: 60%;
+        height: 100%;
+        border-radius: 0px 25px 25px 0;
+    }
+</style>
